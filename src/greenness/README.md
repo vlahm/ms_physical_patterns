@@ -21,6 +21,11 @@ LandsatTS (Berner et al. 2023, Ecography, doi:10.1111/ecog.06768).
 | `05_validate.R` | step tests, diagnostics, sensitivity | |
 | `06_trends.R` | Sen's slopes with the same filters as temp/precip/GPP; greening counts | `data_working/discharge_metrics_siteyear_nTest.rds`, `no3_trends_annual.rds` |
 | `07_export_series.R` | collaborator deliverable: annual ndvi/nirv per site-water year (`data_working/greenness/deliverable/`) | `greenness_annual.rds`, `sample_points_summary.csv` |
+| `08_collaborator_figures.R` | before/after figures for collaborators | MacroSheds vegetation feather |
+| `09a_run_leohs.py`, `09_leohs.R`, `09b_l7_only.R` | alternative Landsat 8/9 calibration (LEOHS) and an uncalibrated Landsat 7-only series, for comparison | Python `leohs` env, Earth Engine |
+| `10_leohs_figures.R` | figures comparing the calibrations | outputs of 09* |
+| `11_modis_divergence.R`, `11a_modis_gee.py`, `11b_modis_divergence_figs.R` | why MODIS NDVI rises relative to Landsat after 2013 (MODIS Collection 6 drift) | Earth Engine |
+| `swap_in_greenness.R` (on branch `greenness-swap`) | swaps the delivered series in for Landsat GPP in the paper code (sourced by `src/setup.R`) | `data_raw/greenness/ms_landsat_greenness_annual.csv` |
 
 Outputs go to `data_working/greenness/` and `figures/greenness/` (both gitignored).
 The primary variable is `ndvi_gs_xcal` in `data_working/greenness/greenness_annual.rds`.

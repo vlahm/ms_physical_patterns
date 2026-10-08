@@ -37,3 +37,6 @@ Rplot*.png
 
 # Word temp/lock files
 ~$*
+
+# R graphics device default output
+Rplots.pdf
