@@ -1,0 +1,9 @@
+set,band,slope,intercept,source
+global,red,0.9938,0.0134,"LEOHS global SR L8toL7 (github.com/galenrichardson/LEOHS, Global_Harmonization_functions_SRandTOA.txt)"
+global,nir,0.9225,0.0260,"LEOHS global SR L8toL7 (github.com/galenrichardson/LEOHS, Global_Harmonization_functions_SRandTOA.txt)"
+regional_ols,red,0.9827,0.0044,"LEOHS regional run (src/greenness/09a_run_leohs.py; data_working/greenness/leohs/run_2013_2017), OLS L8toL7"
+regional_ols,nir,0.8072,0.048,"LEOHS regional run (src/greenness/09a_run_leohs.py; data_working/greenness/leohs/run_2013_2017), OLS L8toL7"
+regional_ts,red,0.9691,0.0027,"LEOHS regional run (src/greenness/09a_run_leohs.py; data_working/greenness/leohs/run_2013_2017), Theil-Sen L8toL7"
+regional_ts,nir,0.8229,0.0385,"LEOHS regional run (src/greenness/09a_run_leohs.py; data_working/greenness/leohs/run_2013_2017), Theil-Sen L8toL7"
+regional_rma,red,1.0704,-0.00011,"LEOHS regional run (src/greenness/09a_run_leohs.py; data_working/greenness/leohs/run_2013_2017), RMA LS8 = 0.9342 LS7 + 0.0001, inverted"
+regional_rma,nir,1.1795,-0.06428,"LEOHS regional run (src/greenness/09a_run_leohs.py; data_working/greenness/leohs/run_2013_2017), RMA LS8 = 0.8478 LS7 + 0.0545, inverted"
